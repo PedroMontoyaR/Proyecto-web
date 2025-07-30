@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" type="image/jpg" href="Imagenes/Imagen de WhatsApp 2025-06-19 a las 09.43.59_8ebbe707.jpg"/>
+</head>
+
+<body>
+
+    <header>
+    <h1>CONTACTO</h1>
+  <nav>
+        <h2>PROYECTO WEB HTML5</h2>
+        <ul>
+            <li><a href="01-index.html">Inicio</a></li>
+            <li><a href="02-multimedia.html" target="_blank">Multimedia</a></li>
+            <li><a href="03-dieta.html" target="_blank">Dieta</a></li>
+            <li><a href="#">Proximamente</a></li>
+            <li><a href="04-contacto.html" aria-current="page">Contacto</a></li>
+            <li><a href="#pie_de_pagina">Pie de pagina</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+
+        <section id="contacto">
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Informacion de contacto</legend>
+
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="solo letras y espacios" required>
+                </div>
+
+                 <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" title="solo letras y espacios" required>
+                </div>
+
+                <div>
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="0" max="190" step="1" required>
+                </div>
+
+                <div>
+                <label for="genero">Genero:</label>
+                <select id="genero" name="genero" required>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+                <option value="otro">Otro</option>
+                </select>
+                </div>
+
+                <div>
+                    <label for="email">email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                <label for="motivo">Motivo de contacto:</label><br>
+                <textarea id="motivo" name="motivo" rows="6" cols="60" required></textarea>
+                </div>
+
+            </fieldset>
+            <input type="submit" value="enviar formulario"/>
+            <input type="reset" value="limpiar el formulario"/>
+        </form>
+        </section>
+    </main>
+
+     <footer id="pie_de_pagina">
+        <p>Todo por Martín ❤️👶</p>
+        <p>por Pedro Montoya &copy; 2025</p>
+        <a href="#top">Ir al principio</a>
+    </footer>
+    
+</body>
+</html>
